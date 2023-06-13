@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  </head>
+  <body>
+    <div class="frm">
+      <h3>Kontaktformular</h3>
+      <form action="#" method="post">
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Vor- und Nachname"
+          required
+        />
+        <label for="tel"></label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="0176 0000 0000"
+          pattern="[0-9]+"
+          required
+        />
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+        />
+        <!-- Register your Website in https://www.google.com/recaptcha/admin and put your Site key in downer div and put your Secret key in php -->
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+        <input type="submit" value="Absenden" />
+      </form>
+    </div>
+
+    <script src="/main.js">
+ 
+    </script>
+  </body>
+</html>
